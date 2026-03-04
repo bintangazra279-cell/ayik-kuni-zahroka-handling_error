@@ -4,17 +4,17 @@ from truk import Truck
 
 def main():
     try:
-        my_car = Car("Toyota", "Corolla", 4)
+        my_car = Car("Toyota", "Corolla", 0)
         my_truck = Truck("Ford", "F-150", 1000)
 
-        # Operasi mobil
+        # Oprsi mobil
         try:
             my_car.drive()
             my_car.honk()
         except Exception as e:
             print("Error pada Car:", e)
 
-        # Operasi truk
+        # Oprsi truk
         try:
             my_truck.drive()
             my_truck.load(1200)  # Akan memunculkan error
@@ -22,7 +22,7 @@ def main():
             print("Error pada Truck:", e)
 
     except (ValueError, TypeError) as e:
-        print("Muatan melebihi kapasitas maksimum!:", e)
+        print("terjadi error!:", e)
 
 if __name__ == "__main__":
     main()
