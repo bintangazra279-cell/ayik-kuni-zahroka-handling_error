@@ -4,7 +4,7 @@ from truk import Truck
 
 def main():
     try:
-        my_car = Car("Toyota", "Corolla", 0)
+        my_car = Car("Toyota", "Corolla", 4)
         my_truck = Truck("Ford", "F-150", 1000)
 
         # Oprsi mobil
@@ -25,4 +25,5 @@ def main():
         print("terjadi error!:", e)
 
 if __name__ == "__main__":
+
     main()
